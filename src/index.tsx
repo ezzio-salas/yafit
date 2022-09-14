@@ -10,11 +10,7 @@ const root = ReactDOM.createRoot(
 );
 Sentry.init({
   dsn: "https://a2ae84afee6148159f08f2ac4dbdbbcb@o1409338.ingest.sentry.io/6745523",
-  integrations: [new BrowserTracing()],
-
-  // Set tracesSampleRate to 1.0 to capture 100%
-  // of transactions for performance monitoring.
-  // We recommend adjusting this value in production
+  integrations: [new BrowserTracing()], 
   tracesSampleRate: 1.0,
 });
 
